@@ -38,7 +38,7 @@ params = {
     "labels": dates,
     "datasets": [{
         "data": kanye,
-        "label": "kanye",
+        "label": "kanye West",
         "borderColor": "#3e95cd",
         "fill": 'false'
         },
@@ -64,7 +64,7 @@ params = {
 }
 
 
-def timeit(func):
+def timeit(func): #function calculating the execution time of a function
     @wraps(func)
     def timeit_wrapper(*args, **kwargs):
         start_time = time.perf_counter()
@@ -82,7 +82,7 @@ def timeit(func):
 def hello_world():
  graph_script = """
  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-        <canvas id="myChart" width="50" height="50"></canvas>""" + f"""
+        <canvas id="myChart" width="1000" height="500"></canvas>""" + f"""
         <script>
         var ctx = document.getElementById('myChart');
         var myChart = new Chart(ctx, {params});
